@@ -102,7 +102,7 @@ This project was brewed with 💖, ☕, and a lot of code rage by:
 
 - *Ujjawal*
 - *Nrishan*
-- *Kushal*
+- *Khushal*
 - *Ichhit*
 
 ---
