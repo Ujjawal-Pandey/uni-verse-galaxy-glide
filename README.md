@@ -71,7 +71,7 @@ Live demo 👉 [https://new-univere-try.vercel.app](https://new-univere-try.verc
 Wanna run it locally like a boss? Follow these steps:
 
 # 1. Clone the repository
-git clone [https://github.com/njd07/uni-verse-galaxy-glide_new.git](https://github.com/Ujjawal-Pandey/uni-verse-galaxy-glide)
+git clone [https://github.com/Ujjawal-Pandey/uni-verse-galaxy-glide](https://github.com/Ujjawal-Pandey/uni-verse-galaxy-glide)
 
 # 2. Move into the directory
 cd uni-verse-galaxy-glide_new
