@@ -2,6 +2,8 @@
 
 Welcome to Galaxy Glide – a comprehensive, all-in-one platform designed to elevate every aspect of college life 🚀📚 Whether you're tracking your schedule, managing money, vibing with your campus squad, or just trying to stay sane – we got you 💅
 
+#SummerofCode'25  #GSoCInnovatorsClub
+
 Live demo 👉 [https://new-univere-try.vercel.app](https://new-univere-try.vercel.app)
 
 ---
