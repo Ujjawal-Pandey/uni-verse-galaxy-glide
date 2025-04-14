@@ -1,73 +1,122 @@
-# Welcome to your Lovable project
+# 🌌 UNIverse – Your Ultimate Campus Companion
 
-## Project info
+Welcome to Galaxy Glide – a comprehensive, all-in-one platform designed to elevate every aspect of college life 🚀📚 Whether you're tracking your schedule, managing money, vibing with your campus squad, or just trying to stay sane – we got you 💅
 
-**URL**: https://lovable.dev/projects/42c32f00-554a-4de8-a4e5-e7facaa7c44d
+Live demo 👉 [https://new-univere-try.vercel.app](https://new-univere-try.vercel.app)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🧠 Features
 
-**Use Lovable**
+### 📘 StudySphere
+- 📅 Class scheduling (Add/edit subjects with name & code per user)
+- 📂 Assignment & deadline tracking
+- 💬 Group study chat zones
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/42c32f00-554a-4de8-a4e5-e7facaa7c44d) and start prompting.
+### 💸 SpendStar
+- 🧾 Expense manager with history
+- 👛 Wallet insights
+- 💰 Financial health overview
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🧠 KnowledgeNebula
+- 📚 Learning materials & resource sharing
+- 🏫 Campus info & academic resources
 
-**Use your preferred IDE**
+### 🤝 StarConnect
+- 🧑‍🤝‍🧑 Campus social networking
+- 📢 Community posts & friend connections
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 🧘 MindMoons
+- 🤖 AI Chat Assistant (powered by Chatbase)
+- 📈 Mood tracking
+- ✨ Motivational quotes (without relying on Gemini API)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 🧩 Additional Core Goodies
+- 🔐 Auth system
+- 🔄 Real-time updates
+- 📁 File storage & sharing
+- 📱 Responsive UI with animations
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## ⚙ Tech Stack
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
+### 🧪 Frontend
+- React + TypeScript
 - Tailwind CSS
+- shadcn/ui + Radix UI
+- Framer Motion (for spicy animations)
 
-## How can I deploy this project?
+### 🔥 Backend
+- Supabase (as BaaS)
+- Deno (for Edge Functions)
 
-Simply open [Lovable](https://lovable.dev/projects/42c32f00-554a-4de8-a4e5-e7facaa7c44d) and click on Share -> Publish.
+### 🗃 Database
+- PostgreSQL (via Supabase)
 
-## Can I connect a custom domain to my Lovable project?
+### 🌐 APIs
+- Chatbase (for AI Assistant)
+- Supabase APIs (auth, storage, realtime)
 
-Yes, you can!
+### 🛠 Dev Tools
+- Vite
+- ESLint
+- Git
+- Vercel (for deployment)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 💻 Local Development
+
+Wanna run it locally like a boss? Follow these steps:
+
+# 1. Clone the repository
+git clone [https://github.com/njd07/uni-verse-galaxy-glide_new.git](https://github.com/Ujjawal-Pandey/uni-verse-galaxy-glide)
+
+# 2. Move into the directory
+cd uni-verse-galaxy-glide_new
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
+
+
+## 🚀 Deployment
+
+This webapp is deployed using *Vercel* 🌍  
+You can check it out here 👉 [https://new-univere-try.vercel.app](https://new-univere-try.vercel.app)
+
+Wanna deploy your own version?
+- Create a Vercel account
+- Connect this GitHub repo
+- Set environment variables (if needed)
+- Hit that *Deploy* button 💥
+
+---
+
+## ❤ Made with Love
+
+This project was brewed with 💖, ☕, and a lot of code rage by:
+
+- *Ujjawal*
+- *Nrishan*
+- *Kushal*
+- *Ichhit*
+
+---
+
+## 🤝 Wanna Contribute?
+
+We’d love that! 🫶  
+Fork the repo, make your changes, and create a pull request. Just don’t break our baby pls 😭
+
+---
+
+## ⭐ Like What You See?
+
+Drop a star ⭐ on this repo and flex that taste in top-tier campus tech 😎  
+It makes our GitHub pages feel warm and fuzzy.
+
+---
