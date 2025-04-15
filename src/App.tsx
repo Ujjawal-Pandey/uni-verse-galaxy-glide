@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -20,6 +19,7 @@ import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import { useAuth } from "./contexts/AuthContext";
+import ChatbaseScript from '@/components/ChatbaseScript';
 
 const queryClient = new QueryClient();
 
@@ -113,6 +113,7 @@ const App = () => (
         <AuthProvider>
           <Toaster />
           <Sonner />
+          <ChatbaseScript />
           <AppRoutes />
         </AuthProvider>
       </UniverseProvider>

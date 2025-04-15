@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { format } from "date-fns";
@@ -37,7 +36,7 @@ const MindMoons = () => {
   const [chatHistory, setChatHistory] = useState<{role: 'user' | 'assistant', content: string, timestamp: Date}[]>([
     {
       role: 'assistant',
-      content: "👋 Hi there! I'm Gemini AI, your personal assistant. How can I help you today?",
+      content: "👋 Hi there! I'm your AI assistant. How can I help you today?",
       timestamp: new Date()
     }
   ]);
@@ -64,11 +63,17 @@ const MindMoons = () => {
     setIsLoading(true);
     
     try {
-      const { data, error } = await supabase.functions.invoke('gemini-chat', {
+      console.log('Sending message to Chatbase:', chatMessage);
+      const { data, error } = await supabase.functions.invoke('supabase-chat', {
         body: { prompt: chatMessage }
       });
       
-      if (error) throw new Error(error.message);
+      if (error) {
+        console.error('Chatbase API error:', error);
+        throw new Error(error.message);
+      }
+      
+      console.log('Received response from Chatbase:', data);
       
       // Add AI response to chat
       setChatHistory(prev => [...prev, {
@@ -77,10 +82,10 @@ const MindMoons = () => {
         timestamp: new Date()
       }]);
     } catch (error) {
-      console.error("Error calling Gemini AI:", error);
+      console.error("Error calling Chatbase AI:", error);
       toast({
         title: "AI Chat Error",
-        description: "Failed to get a response from Gemini. Please try again.",
+        description: "Failed to get a response from the AI. Please try again.",
         variant: "destructive",
       });
       
@@ -145,17 +150,17 @@ const MindMoons = () => {
             <div className="p-4 border-b border-universe-card">
               <div className="flex items-center">
                 <Avatar className="w-10 h-10 mr-3">
-                  <AvatarImage src="/gemini-ai.png" />
+                  <AvatarImage src="/chatbase-ai.png" />
                   <AvatarFallback className="bg-universe-neonPurple">
                     <BrainCircuit className="w-5 h-5 text-white" />
                   </AvatarFallback>
                 </Avatar>
                 <div>
                   <h3 className="font-semibold flex items-center">
-                    Gemini AI
+                    AI Assistant
                     <Sparkles className="w-4 h-4 ml-2 text-universe-neonBlue" />
                   </h3>
-                  <p className="text-xs text-gray-400">Powered by Google Gemini</p>
+                  <p className="text-xs text-gray-400">Powered by Chatbase</p>
                 </div>
               </div>
             </div>
@@ -213,7 +218,7 @@ const MindMoons = () => {
                 </Button>
               </div>
               <p className="text-xs text-gray-400 mt-2">
-                Powered by Google Gemini. Your conversations are not stored permanently.
+                Powered by Chatbase. Your conversations are not stored permanently.
               </p>
             </div>
           </GlowingCard>
